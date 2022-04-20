@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: hsl(229, 57%, 11%);
+  background-image: url(images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: -2rem 15rem;
+}
+
+.container {
+  margin: 13rem 15rem;
+  display: flex;
+}
+
+.container-left,
+.container-right {
+  background-color: hsl(228, 56%, 26%);
+}
+
+.container-left {
+  border-radius: 10px 40px 10px 10px;
+  padding: 1.5rem;
+  padding-right: 7rem;
+  height: 8rem;
+}
+
+.logo {
+  width: 84px;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  background-color: hsl(229, 57%, 11%);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.icon2 {
+  padding-top: 0.75rem;
+}
+
+.icon3 {
+  padding-top: 1rem;
+}
+
+.container-right {
+  color: hsl(229, 7%, 55%);
+  margin-left: 2rem;
+  padding: 2rem;
+  border-radius: 14px;
+  width: 37rem;
+  height: 8rem;
+  position: relative;
+  top: 0rem;
+}
+
+span {
+  color: #fff;
+}
+
+.text {
+  position: relative;
+  top: -1.5rem;
+  font-size: 12px;
+}
+
+.text h3 {
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+}
+
+.popout {
+  position: relative;
+  top: -7.5rem;
+  left: 10rem;
+  background-color: #fff;
+  color: hsl(229, 7%, 55%);
+  width: 150px;
+  border-radius: 5px;
+  margin: 50px auto;
+  padding: 16px;
+  text-align: center;
+}
+
+.popout:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #fff;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+  right: 1px;
+  bottom: -18px;
+}
+
+b {
+  font-size: 30px;
+  margin-right: 0.5rem;
+  color: black;
+}
+
+.status-bar-grey {
+  height: 15px;
+  width: 92%;
+  background-color: hsl(229, 57%, 11%);
+  position: relative;
+  top: -8rem;
+  left: 1rem;
+  border-radius: 10px;
+}
+
+.status-bar-color {
+  height: 15px;
+  width: 75%;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 163, 153) 0%,
+    rgb(255, 77, 151) 100%
+  );
+}
+
+.ball {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 22rem;
+  top: 0.1rem;
+}
+
+.n-left {
+  position: relative;
+  left: 1rem;
+  top: -7.5rem;
+  color: #fff;
+}
+
+.n-right {
+  position: relative;
+  left: 28rem;
+  top: -8rem;
+  color: #fff;
+  width: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url(images/bg-mobile.png);
+    background-repeat: repeat-y;
+  }
+
+  .container {
+    margin: 13rem 1rem;
+  }
+
+  .icon3 {
+    position: relative;
+    left: 5.5rem;
+    top: -2.7rem;
+  }
+
+  .popout {
+    left: 7rem;
+  }
+
+  .n-right {
+    left: 21.5rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    display: grid;
+  }
+
+  .container-left {
+    margin-bottom: 2rem;
+    height: 9rem;
+    width: 66%;
+    margin-left: 6rem;
+    position: relative;
+    top: -8rem;
+  }
+
+  .icon3 {
+    left: 0.5rem;
+    top: 0rem;
+  }
+
+  .container-right {
+    margin-left: 0;
+    width: 27rem;
+    top: -8rem;
+  }
+
+  .popout {
+    left: 1rem;
+    top: 2rem;
+  }
+
+  .popout::before {
+    display: none;
+  }
+
+  .ball {
+    left: 15rem;
+  }
+}
